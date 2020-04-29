@@ -1,0 +1,22 @@
+{
+  "name": "covid19",
+  "version": "1.0.0",
+  "description": "A CLI to check COVID-19 data",
+  "main": "index.js",
+  "bin": "./bin/covid.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "covid-19"
+  ],
+  "author": "Thong Ba Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.1.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0"
+  }
+}
