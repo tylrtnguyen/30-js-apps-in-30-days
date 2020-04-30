@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootswatch Theme - Minty -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4HfFay3AYJnEmbgRzxYWJk/Ka5jIimhB/Fssk7NGT9Tj3rkEChpSxLK0btOGzf2I" crossorigin="anonymous" />
+    <title>BMI Calculator</title>
+    <style>
+        #loading, #results {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">
+                        BMI Calculator
+                    </h1>
+                    <form id="bmi-form">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab-1">Imperial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-2">Metric</a>
+                            </li>
+                        </ul>
+                        <!-- TAB CONTENT -->
+                        <div class="tab-content">
+                            <!-- IMPERIAL TAB START -->
+                            <div id="tab-1" class="tab-pane active">
+                                <!-- HEIGHT LABEL-->
+                                <div class="text-left mb-1">
+                                    <b>Enter your height</b>
+                                </div>
+                                <!-- END HEIGHT LABEL-->
+                                <!-- HEIGHT INPUT -->
+                                <div class="form-row mb-3">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="input-group mb-2">
+                                                <input type="text" id="feet" class="form-control" name="feet"
+                                                    aria-label="height in feet unit" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">ft.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <div class="input-group mb-2">
+                                                <input type="text" id="inch" class="form-control" name="inch"
+                                                    aria-label="height in inch unit" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">in.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END HEIGHT INPUT -->
+                                <!-- WEIGHT INPUT -->
+                                <div class="text-left mb-3">
+                                    <b>Enter your weight</b>
+                                </div>
+                                <div class="form-row md-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <input type="text" id="pound" class="form-control" name="pound"
+                                                aria-label="weight in pound" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">lbs.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IMPERIAL TAB END -->
+                            <!-- METRIC TAB START -->
+                            <div id="tab-2" class="tab-pane">
+                                <!-- HEIGHT LABEL-->
+                                <div class="text-left mb-1">
+                                    <b>Enter your height</b>
+                                </div>
+                                <!-- END HEIGHT LABEL-->
+                                <!-- HEIGHT INPUT -->
+                                <div class="form-row mb-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <input type="text" id="meter" class="form-control" name="meter"
+                                                aria-label="height in meter unit" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">m.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END HEIGHT INPUT -->
+                                <!-- WEIGHT INPUT -->
+                                <div class="text-left mb-3">
+                                    <b>Enter your weight</b>
+                                </div>
+                                <div class="form-row md-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <input type="text" id="kilogram" class="form-control" name="kilogram"
+                                                aria-label="weight in kilogram" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">kg.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END WEIGHT INPUT -->
+                        <button type="submit" class="btn btn-info btn-danger btn-block">
+                            Calculate
+                        </button>
+                    </form>
+                    <!-- LOADER HERE -->
+                    <div id="loading">
+                        <img src="img/loading.gif" alt="loading image">
+                    </div>
+                    <!-- RESULT -->
+                    <div class="card text-white text-left bg-primary mt-3" id="results" style="max-width: 40rem;">
+                        <div class="card-header">Your Result</div>
+                        <div class="card-body">
+                            <!-- Monthly Payment -->
+                            <div class="form-group">
+                                <fieldset>
+                                    <label class="control-label" for="bmi-index">Your BMI is</label>
+                                    <input class="form-control" id="bmi-index" type="text" readonly="" />
+                                </fieldset>
+                            </div>
+                            <!-- Monthly Payment -->
+                            <div class="form-group">
+                                <fieldset>
+                                    <label class="control-label" for="status">Status</label>
+                                    <input class="form-control" id="status" type="text" readonly="" />
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Javascript CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Custom Script -->
+    <script src="script/tab.js"></script>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
