@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootswatch CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-4HfFay3AYJnEmbgRzxYWJk/Ka5jIimhB/Fssk7NGT9Tj3rkEChpSxLK0btOGzf2I" crossorigin="anonymous"/>
+    <title>Bitcoin Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Checker</h1>
+        <form action="/" method="POST">
+            <div class="form-group">
+                <select id="crypto" class="custom-select" name="crypto">
+                  <option selected="">Crypto Type</option>
+                  <option value="BTC">Bitcoin</option>
+                  <option value="ETH">Ethereum</option>
+                  <option value="LTC">Litecoin</option>
+                  <option value="XRP">Ripple</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select id="fiat" class="custom-select" name="fiat">
+                    <option selected="">Currency</option>
+                    <option value="USD">US Dollars</option>
+                    <option value="GBP">GB Pounds</option>
+                    <option value="EUR">EU Euros</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-primary" type="submit">Get Price</button>
+              </div>
+        </form>
+    </div>
+</body>
+</html>
