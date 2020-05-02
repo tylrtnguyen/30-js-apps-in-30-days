@@ -1,0 +1,17 @@
+{
+  "name": "AWS-S3-Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.646.0",
+    "dotenv": "^8.2.0"
+  }
+}
