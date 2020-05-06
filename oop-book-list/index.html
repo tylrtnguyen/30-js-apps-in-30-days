@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootswatch CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-bWm7zrSUE5E+21rA9qdH5frkMpXvqjQm/WJw4L5PYQLNHrywI5zs5saEjIcCdGu1" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/icons8-book-100.png">
+    <title>OOP Book List - Project</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Book Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/tylrtnguyen" target="__blank" rel="noopener referer">Author: Thong Nguyen</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <h1 class="app-header">Add Book To Your Reading List</h1>
+        <form id="book-form">
+            <!-- Title starts -->
+            <div class="form-group">
+                <label class="col-form-label" for="title">Title</label>
+                <input type="text" class="form-control" placeholder="Book Title" id="title">
+            </div>
+            <!-- Title stops -->
+            <!-- Author starts -->
+            <div class="form-group">
+                <label class="col-form-label" for="author">Author</label>
+                <input type="text" class="form-control" placeholder="Author" id="author">
+            </div>
+            <!-- Author stos -->
+            <!-- ISBN starts -->
+            <div class="form-group">
+                <label class="col-form-label" for="inputDefault">ISBN#</label>
+                <input type="text" class="form-control" placeholder="ISBN" id="ISBN">
+            </div>
+            <!-- ISBN stops -->
+            <!-- Reading Status starts -->
+            <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Status</label>
+                <select class="custom-select" id="status">
+                  <option value="New" selected>New</option>
+                  <option value="Read">Read</option>
+                  <option value="In progress">In progress</option>
+                </select>
+              </div>
+            <!-- Reading Status stops-->
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+        <hr>
+        <!-- Book List Table -->
+        <table class="table">
+            <thead>
+                <tr class="table-active">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="app-es6.js"></script>
+</body>
+</html>
