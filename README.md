@@ -18,5 +18,9 @@
 	<td>BMI Calculator</td>
 	<td><a href="https://bmi-calculator-eosin.now.sh/" target="_blank">Live At</a></td>
     </tr>
+     <tr>
+	<td>Countlorie</td>
+	<td><a href="https://countlorie.now.sh" target="_blank">Live At</a></td>
+    </tr>
   </tbody>
 </table>
