@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     // Transform all divs into an array of 200 elements
     let squares = Array.from(grid.querySelectorAll('div'));
+    const span = document.getElementsByClassName('close')[0];
+    const hamburgerBtn = document.querySelector('.toggler');
+    const menu = document.querySelector('.menu');
     const scoreDisplay = document.querySelector('#score');
     const funcButton = document.querySelector('#func-button');
 
@@ -242,5 +245,13 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(timerId);
         }
     }
+
+  //Menu eventListeners
+  hamburgerBtn.addEventListener('click', () => {
+    menu.style.display = 'flex'
+  })
+  span.addEventListener('click', () => {
+    menu.style.display = 'none'
+  })
 
 })
