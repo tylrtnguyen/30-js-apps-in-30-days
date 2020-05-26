@@ -16,15 +16,19 @@
   <tbody>
     <tr>
       <td>GitHub Finder</td>
-      <td><a href="https://github-finder-six.now.sh/" target="_blank">Live At</a></td>
+      <td><a href="https://github-finder-six.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
     <tr>
 	<td>BMI Calculator</td>
-	<td><a href="https://bmi-calculator-eosin.now.sh/" target="_blank">Live At</a></td>
+	<td><a href="https://bmi-calculator-eosin.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
      <tr>
 	<td>Countlorie</td>
-	<td><a href="https://countlorie.now.sh" target="_blank">Live At</a></td>
+	<td><a href="https://countlorie.now.sh" target="_blank" rel="noopener noreferrer">Live At</a></td>
+    </tr>
+     <tr>
+	<td>Tetris Game</td>
+	<td><a href="https://tetris-gilt.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
   </tbody>
 </table>
