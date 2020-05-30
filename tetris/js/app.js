@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerBtn = document.querySelector('.toggler');
     const menu = document.querySelector('.menu');
     const scoreDisplay = document.querySelector('#score');
+    const linesDisplay = document.querySelector('.lines-score');
     const funcButton = document.querySelector('#func-button');
 
     // Declare tetromino width
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextRandom = 0;
     let timerId;
     let score = 0;
+    let lineScore = 0;
     const backgroundImages = [
         'url(images/blue_block.png)',
         'url(images/pink_block.png)',
@@ -224,7 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Use the every method to check if every div is taken
             if(row.every(index => squares[index].classList.contains('taken'))) {
                 score += 10;
+                lineScore += 1;
                 scoreDisplay.innerHTML = score;
+                linesDisplay.innerHTML = lineScore;
                 row.forEach(index => {
                     squares[index].classList.remove('taken') || squares[index].classList.remove('tetromino');
                     squares[index].style.backgroundImage = 'none';
