@@ -32,5 +32,9 @@
 	<td>Bank App Backend #Day13</td>
 	<td><a href="https://github.com/tylrtnguyen/bank-app-backend" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
+    <tr>
+        <td>Progress Weather App</td>
+        <td><a href="https://weather-app-gray.now.sh/" target="_blank" rel$
+    </tr>
   </tbody>
 </table>
