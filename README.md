@@ -34,7 +34,7 @@
     </tr>
     <tr>
         <td>Progress Weather App</td>
-        <td><a href="https://weather-app-gray.now.sh/" target="_blank" rel$
+        <td><a href="https://weather-app-gray.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
   </tbody>
 </table>
