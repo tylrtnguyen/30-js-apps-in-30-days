@@ -1,0 +1,15 @@
+{
+    "short_name": "PWA",
+    "name": "Progressive Weather App",
+    "icons": [
+        {
+            "src": "images/logo.png",
+            "type": "image/png",
+            "sizes": "1024x1024"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#212121",
+    "background_color": "#F4F4F9"
+}
