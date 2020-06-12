@@ -40,6 +40,9 @@
         <td>Moving Element</td>
         <td><a href="https://codepen.io/thongnguyen17/pen/zYrxXqj" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
-	
+    <tr>
+        <td>Dark Theme Toggle</td>
+        <td><a href="https://theme-and-hook.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
+    </tr>
   </tbody>
 </table>
