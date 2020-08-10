@@ -1,0 +1,5 @@
+Recursive calls to a subset of the problem
+1. Recognize the base case
+2. Divide: Break problem down during each call
+3. Conquer: Do work on each subset
+4. Combine: Solutions
