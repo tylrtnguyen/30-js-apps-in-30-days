@@ -45,12 +45,12 @@
         <td><a href="https://theme-and-hook.now.sh/" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
     <tr>
-	<td>Indexed DB #Day20</td>
+	<td>Indexed DB Day#20</td>
 	<td><a href="https://codepen.io/thongnguyen17/pen/qBZdwrE" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
     <tr>
-        <td>Indexed DB #Day22</td>
-        <td><a href="https://codesandbox.io/s/vue-pixel-drawing-forked-qibgp" target="_blank" rel="n>
+        <td>Pixel Drawing App Day#22</td>
+        <td><a href="https://codesandbox.io/s/vue-pixel-drawing-forked-qibgp" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
 
    
