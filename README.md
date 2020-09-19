@@ -52,7 +52,10 @@
         <td>Pixel Drawing App Day#22</td>
         <td><a href="https://codesandbox.io/s/vue-pixel-drawing-forked-qibgp" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
-
+    <tr>
+        <td>Bill Tracking App with Vue.js</td>
+        <td><a href="https://codesandbox.io/s/vue-bill-tracking-m1b5q?file=/src/App.vue" target="_blank" rel="noopener noreferrer">Live At</a></td>
+    </tr>
    
   </tbody>
 </table>
