@@ -56,6 +56,9 @@
         <td>Bill Tracking App with Vue.js</td>
         <td><a href="https://codesandbox.io/s/vue-bill-tracking-m1b5q?file=/src/App.vue" target="_blank" rel="noopener noreferrer">Live At</a></td>
     </tr>
-   
+   <tr>
+        <td>User Authentication with Node.js and Passport</td>
+        <td><a href="https://github.com/tylrtnguyen/node-passport-authentication" target="_blank" rel="noopener noreferrer">Live At</a></td>
+    </tr>>
   </tbody>
 </table>
