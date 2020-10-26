@@ -59,6 +59,10 @@
    <tr>
         <td>User Authentication with Node.js and Passport</td>
         <td><a href="https://github.com/tylrtnguyen/node-passport-authentication" target="_blank" rel="noopener noreferrer">Live At</a></td>
-    </tr>>
+    </tr>
+    <tr>
+	    <td>Chat app with Redux</td>
+	    <td><a href="https://github.com/tylrtnguyen/chat-app-with-redux" target="_blank" rel="noopener noreferrer">Live At</a></td>
+    </tr>
   </tbody>
 </table>
